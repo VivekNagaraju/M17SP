@@ -42,3 +42,4 @@ num5 = num6 = 46
 print(num5)
 print(num6)
 
+print(num5+num6)
