@@ -34,7 +34,7 @@ Commenting in Python:
 2. Multi line comments - triple double/ single quotes.
 '''
 # int a = 3; --> java example
-a = 3.0 # float
+a = 3.65 # float
 b = "abc" # string
 c = 5 # integer
 d = 4+7j # Complex
@@ -47,3 +47,17 @@ print(type(c))
 print(type(d))
 print(type(e))
 # print(type(c))
+
+#Type Conversion/ Type casting
+print("=======Type casting=======")
+f = int(a) # o/p: 3 -> int
+print(f)
+print(type(f))
+
+# float()
+# str()
+# complex()
+# bool()
+
+
+
