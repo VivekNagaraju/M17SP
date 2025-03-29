@@ -35,7 +35,7 @@ Commenting in Python:
 '''
 # int a = 3; --> java example
 a = 3.65 # float
-b = "abc" # string
+b = "a" # string
 c = 5 # integer
 d = 4+7j # Complex
 e = True # boolean
@@ -58,6 +58,8 @@ print(type(f))
 # str()
 # complex()
 # bool()
+
+print(str(100))
 
 
 
