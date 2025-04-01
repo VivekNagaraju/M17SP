@@ -5,15 +5,21 @@ Created on 29-Mar-2025
 
 Conditional statements: Statements which check the conditions and determine the flow
 
-If a condition is satisfied one set of code will executed otherwise another set of code can be 
+If a condition is satisfied one set of code will be executed otherwise another set of code can be 
 executed
 
 Syntax:
 
 if (condition):
- <code to be executed if condition is satisfied>
+ <set of code to be executed if condition is satisfied>
 
 Indentation
+
+Types of conditional statements:
+1. if statement: If a condition is satisfied one set of code will be executed otherwise it won't anything
+2. if-else statements
+3. Series if-else statements
+4. Nested if-else statements
 '''
 
 age=int(input("Enter your age:"))
