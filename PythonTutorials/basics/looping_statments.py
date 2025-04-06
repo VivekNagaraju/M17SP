@@ -46,10 +46,10 @@ row No (1)
 No. of stars(5)=Stop Value- row No
 
 3)
-1111*
-111* *
-11* * *
-1* * * *
+    *
+   * *
+  * * *
+ * * * *
 * * * * *
 
    *
@@ -100,14 +100,15 @@ for n in range(0, 100):
         print(n)
 '''
 '''
-for n in range(6, 1):
+# Upward right angle triangle
+for n in range(1, 6):
     
     for m in range(n):
         print("*", end=" ")
     
     print()
-
 '''
+
 '''
 for n in range(6, 1, -1):
     print(n)
@@ -121,13 +122,16 @@ for n in range(5, 0, -1):
     print()
 '''
 '''
+#Downward right angle triangle
 for n in range(1, 6):
     
     for m in range(6-n):
         print("*", end=" ")
     
     print()
-'''    
+  
+'''
+# Upward pyramid 
 for n in range(1, 6):
     
     for m in range(6-n):
