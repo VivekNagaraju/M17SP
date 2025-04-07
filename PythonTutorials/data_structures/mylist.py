@@ -14,6 +14,7 @@ List: Is a data structure represented by []
 3. Accessing elements
     - Indexing/ Using Index
     - Using slicing operator
+    - Using loops
 4. List can be modified
 
 
@@ -61,3 +62,27 @@ print('d[-12:-6]-->', d[-12:-6])
 print('d[::2]-->',d[::2])
 print('d[::-1]-->',d[::-1])
 print('d[-6:-12:-1]-->',d[-6:-12:-1])
+
+# Accessing using loops
+print('c-->', c)
+# for loop:
+print("===For loop===")
+for ele in c:
+    print(ele)
+    
+print('===While loop===')
+
+i=0
+while i<len(d):
+    print(d[i])
+    i+=1
+'''
+print(c[0])
+print(c[1])
+print(c[2])
+print(c[3])
+print(c[4])
+'''
+# print(len(c)) # Finding the length of a collection
+
+e=["Bhavani", "Chitra", "Sandeep", "Sanjana", "Vivek", "Yogitha"]
