@@ -108,4 +108,36 @@ e.insert(5, "iQuest")
 print(e)
 
 e.append(c)
-print(e)
+print('e.append(c):',e)
+
+f=e.copy()
+print(f)
+
+
+
+e.extend(c)
+print('e.extend(c):', e)
+
+print(len(e))
+print(e[10])
+print(e[11])
+
+print(e.index(4.76))
+print('e.count("Bhavani"):',e.count("Bhavani"))
+print('e.index("Bhavani"):',e.index("Bhavani", 1))
+
+'''
+Q. Find the indices of a element present in the list
+'''
+
+print('c-->', c)
+print(c.pop(2))
+print(c)
+print(c.remove(True))
+print(c)
+print(c.remove("Vivek"))
+print(c)
+print('c.pop()', c.pop())
+print(c)
+c.remove(True)
+print(c)
