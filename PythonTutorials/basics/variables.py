@@ -7,11 +7,11 @@ It is a memory space/ container which stores data
 OR 
 It is name given to memory location/ container. 
 
-Data stored in this container can be changed.
+Data stored in this container(variable) can be changed.
 
 Creation of variables:
 
-1. We need to specify the type of data the variable stores
+1. We do not need to specify the type of data the variable stores
 2. We need to give name to the variable
 3. Storing data in the variable (initialization)
 
@@ -39,6 +39,7 @@ roll_no = 0
 
 num3, num4 = 34, 56
 print(num3)
+print(num4)
 
 num5 = num6 = 46
 print(num5)
