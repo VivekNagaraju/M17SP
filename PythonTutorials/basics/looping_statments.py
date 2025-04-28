@@ -3,7 +3,7 @@ Created on 01-Apr-2025
 
 @author: Vivek
 
-Looping statements: Statements which executes a code multiple times until a condition is satisfied
+Looping statements: Statements which executes a code multiple times until a condition is fulfilled
 
 Types:
 1. While loop:
@@ -58,14 +58,14 @@ No. of stars(5)=Stop Value- row No
 *******
 '''
 '''
-count=2.1
+# count=0
+count=5
 
+# while count<5:
 while count>0:
-    # print("count:",count)
-    # print("count<5: ",count<5)
     print("Hello world!")
-    # count=count+1
-    count-=1 # increment operator: +=; decrement operator:-=
+    # count=count+1 # increment operator: +=; count+=1
+    count-=1 # decrement operator:-=; count = count-1
 
 # print("count:",count)
 # print("count<5: ",count<5)
@@ -114,12 +114,14 @@ for n in range(6, 1, -1):
     print(n)
 '''
 '''
+# Reverse right half pyramid
 for n in range(5, 0, -1):
     
     for m in range(n):
         print("*", end=" ")
     
     print()
+
 '''
 '''
 #Downward right angle triangle
@@ -131,6 +133,7 @@ for n in range(1, 6):
     print()
   
 '''
+'''
 # Upward pyramid 
 for n in range(1, 6):
     
@@ -141,3 +144,34 @@ for n in range(1, 6):
         print("*", end=" ")
     
     print()
+    
+'''
+'''
+print(range(5))
+
+for i in range(5):
+    print(i)
+    
+names=["Yash", "Sanju", "Srila"]
+print(names)
+
+for name in names:
+    print(name)
+    
+even_list=[]
+for i in range(1, 25):
+    if i%2==0:
+        # print(i)
+        even_list.append(i) # add element to the list
+    
+print("even_list:",even_list)
+
+#List Comprehension
+
+even_list_comp=[i for i in range(1, 25) if i%2==0]
+print("even_list_comp:",even_list_comp)
+'''   
+    
+
+    
+

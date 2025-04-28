@@ -3,7 +3,7 @@ Created on 29-Mar-2025
 
 @author: Vivek
 
-Conditional statements: Statements which check the conditions and determine the flow
+Conditional statements: Statements which check the conditions and determine the flow of program.
 
 If a condition is satisfied one set of code will be executed otherwise another set of code can be 
 executed
@@ -22,7 +22,7 @@ Types of conditional statements:
 4. Nested if-else statements
 '''
 
-age=int(input("Enter your age:"))
+# age=int(input("Enter your age:"))
 
 """
 if age>=18 and age<=59:
@@ -51,6 +51,7 @@ else:
     else:
         print("You're a child")
 '''
+'''
 if age>=0:
     if age in range(0, 13):
         print("You're a child")
@@ -65,4 +66,22 @@ if age>=0:
         print("You're a senior citizen")
 else:
     print("Please enter positive number")
+'''
+
+age=int(input("Enter your age:"))
+
+if age>18:
+    if age>60:
+        print("You're senior citizen")
+    else:
+        print("You're an adult")
+elif age>12:
+    print("You're a teenager")
+else:
+    print("You're a child")
+
+
+
+
+
 

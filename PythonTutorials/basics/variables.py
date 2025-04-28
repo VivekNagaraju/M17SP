@@ -15,12 +15,13 @@ Creation of variables:
 2. We need to give name to the variable
 3. Storing data in the variable (initialization)
 
-DataType VariableName = Value
+Syntax: 
+VariableName = Value
 
 Invalid cases:
 
 1stnum = 23
-26 = roll_no
+26 = age
 
 '''
 age = 26
@@ -46,3 +47,7 @@ print(num5)
 print(num6)
 
 print(num5+num6)
+
+name="Chitra"
+name2="lakshmi"
+

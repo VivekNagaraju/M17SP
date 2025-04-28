@@ -14,10 +14,10 @@ Categories of data-types:
 1. Built-in data-types: Data types already available in python
     a. Fundamental/ primary data types:
         i. int
-        ii. float
+        ii. float - decimal numbers
         iii. complex - a+bj
         iv. bool (boolean) - True or False
-        v. str (string) - "",''
+        v. str (string) - "",'', ''' '''
         
     b. non-fundamental data types:
         i. list
@@ -35,10 +35,10 @@ Commenting in Python:
 '''
 # int a = 3; --> java example
 a = 3.65 # float
-b = "a" # string
-c = 5 # integer
+b = "vivek" # str
+c = 5 # int
 d = 4+7j # Complex
-e = True # boolean
+e = True # bool
 # c = a+b
 # print(c)
 print(type(a))
@@ -50,7 +50,7 @@ print(type(e))
 
 #Type Conversion/ Type casting
 print("=======Type casting=======")
-f = int(a) # o/p: 3 -> int
+f = int(3.65) # o/p: 3 -> int
 print(f)
 print(type(f))
 
@@ -59,7 +59,17 @@ print(type(f))
 # complex()
 # bool()
 
-print(str(100))
+g=str(100)
+print(g)
+print(type(g))
+
+h='60'
+print(h)
+print(type(h))
+
+print(g+h) # Concatenation: combining 2 strings
+
+
 
 
 
