@@ -27,6 +27,9 @@ function_name -> lower case words separated by _ (mandatory)
 (): -> mandatory
 parametrs -> variables to accept/ consume the values passed by the user (not mandatory)
 
+Types:
+1. Function without parameters
+2. Function with parameters
 '''
 
 a=2
@@ -39,12 +42,34 @@ b=7
 c=a+b 
 print(f"Sum of {a} and {b}:", c)
 
+# Function without parameters
 def welcome():
     print("Hello User! Welcome to iQuest!")
     print("I hope you're doing great!")
 
 welcome()
-welcome()
-welcome()
-welcome()
+# welcome()
+# welcome()
+# welcome()
+
+
+#Function with parameters
+def addition(a, b):
+    c=a+b 
+    # print(f"Addition of {a} and {b}:", c)
+    return c
+    
+d=addition(10, 20)
+print(d)
+
+print(addition(8, 10))
+
+
+def multiplication(num,multiplier):
+    result_mul=num*multiplier
+    print(result_mul)
+    
+multiplication(d, 5)
+
+
 
