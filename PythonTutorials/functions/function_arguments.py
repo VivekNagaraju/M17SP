@@ -23,6 +23,11 @@ Types of Actual arguments:
     - Actual arguments which are assigned to formal arguments based on their positions
 2. Keyword arguments:
     - Actual arguments which are assigned to formal arguments using key-value pair
+    
+Types of formal arguments:
+1. Default arguments
+2. Variable length arguments(*)-> tuple
+3. Keyword variable length arguments(**)-> dictionary
 '''
 
 def subtraction(a, b):
@@ -31,6 +36,31 @@ def subtraction(a, b):
     print("b=", b)
     print("c=", c)
 
-subtraction(20, 10) # a= 20; b= 10
-subtraction(10, 20) # a= 10; b= 20
-subtraction(b=10, a=20)
+# subtraction(20, 10) # a= 20; b= 10
+# subtraction(10, 20) # a= 10; b= 20
+# subtraction(b=10, a=20)
+
+# E=mc**2
+def cal_energy(m, c=300000000):
+    e=m*c**2
+    print("Energy in joules:", e)
+    
+# cal_energy(5)
+# cal_energy(3)
+
+def addition(*a):
+    print(sum(a))
+    # print(type(a))
+
+# addition()
+# addition(1)
+# addition(5, 6)
+# addition(6, 7, 8, 9)
+
+b=(3, 4, 5, 6, 7)
+
+def display(**x):
+    print(x)
+    
+
+# display(name="Vivek", age=32, gender="male")

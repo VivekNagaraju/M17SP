@@ -11,6 +11,7 @@ Ex: print(), type(), input(), id()...
 
 Types of functions:
 1. Predefined functions- came as part of python package
+    - builtin functions
 2. User-defined functions- are defined by users
 
 Why we need functions?
