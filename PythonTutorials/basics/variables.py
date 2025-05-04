@@ -51,3 +51,7 @@ print(num5+num6)
 name="Chitra"
 name2="lakshmi"
 
+# A method of one class can be called using an object of that class.
+name.capitalize()
+
+print(type(name)) # <class 'str'>
