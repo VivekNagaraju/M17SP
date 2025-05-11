@@ -23,6 +23,9 @@ Types of inheritance:
 
 Method Resolution Order(mro()): In an inheritance when we call a method using an object MRO 
 will helps python interpretor to decide in which order it has to traverse the classes
+
+super(): This is used to call super class/ parent class constructor or methods to child class
+when there is a constructor or a method present in child class with same name as super class
 '''
 
 class GrandFather:
@@ -34,9 +37,11 @@ class GrandFather:
         
 class Mother(GrandFather): 
     
-    def __init__(self):
-        print("This is mother class constructor")
-      
+    def __init__(self, name, age):
+        # print(f"Object is created with name: {name} and age: {age}")
+        super().__init__(name)
+        print(f"Age of {name} is {age}")
+    
     def m_method(self):
         print("This is Mother method")
         
@@ -66,13 +71,13 @@ ajja=GrandFather("ajja")
 # ajja.gf_method()
 
 print("======Mother Object======")
-amma=Mother("amma")
+amma=Mother("amma", 50)
 # amma.m_method()
 # amma.gf_method()
 # amma.c_method()
 
 print("=======Child Object======")
-paapu=Child("paapu")
+paapu=Child("paapu", 25)
 # paapu.c_method()
 # paapu.gf_method()
 # paapu.m_method()
