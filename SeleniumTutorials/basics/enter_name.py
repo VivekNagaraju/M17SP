@@ -1,13 +1,10 @@
 '''
-Created on 11-May-2025
+Created on 15-May-2025
 
 @author: admin
-
-
 '''
 from selenium import webdriver
-# from selenium.webdriver import Chrome, Edge
-
+from selenium.webdriver.common.by import By
 
 '''1. Launching the chrome browser'''
 options = webdriver.ChromeOptions()
@@ -19,13 +16,7 @@ driver = webdriver.Chrome(options)
 '''2. Navigating to practice site'''
 driver.get('https://testautomationpractice.blogspot.com/')
 
-'''3. Validate the navigation is successfull'''
-current_page_title=driver.title
-print(current_page_title)
-
-expected_page_title="Automation Testing Practice123"
-
-if current_page_title == expected_page_title:
-    print("Test is Passed!")
-else:
-    print("Test Failed!!")
+'''3. Enter name'''
+name_txt_bx = driver.find_element(By.ID, 'name')
+name_txt_bx.send_keys("Vivek")
+# name_txt_bx.click() # This is just an example syntax for clicking an web element
