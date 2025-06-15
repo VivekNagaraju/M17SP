@@ -55,3 +55,21 @@ def validate_login_page_url(context):
     # context.assertIn(expected_url_portion, actual_url, "Navigation to OrangeHRM login page is failed")
     
     assert expected_url_portion in actual_url, "Navigation to OrangeHRM login page is failed"
+    
+@when(u'User enters username "{username}"')
+def enter_username_parameter(context, username):
+    username_bx = context.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input')
+    username_bx.send_keys(username)
+
+@when(u'User enters password "{password}"')
+def enter_password_parameter(context, password):
+    password_bx = context.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input')
+    password_bx.send_keys(password) 
+
+@then(u'User should able to see "{expected_url_member}" in current page url')
+def validate_current_page_url(context, expected_url_member):
+    expected_url_member = expected_url_member
+    actual_url = context.driver.current_url
+    assert expected_url_member in actual_url, "Expected URL is not present in Current page URL"
+    
+    
