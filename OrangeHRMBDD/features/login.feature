@@ -38,18 +38,23 @@ Feature: Orange HRM Login feature
   Scenario: OrangeHRM Login with parameters
     Given Chrome browser is launched
     When User navigates to OrangeHRM Login page
-    And User enters username "Admin"
+    And User enters username "Admins"
     And User enters password "admin123"
     And User clicks on login button
-    Then User should able to see "dashboard/index" in current page url
-  
-  #@tag2
-  #Scenario Outline: Title of your scenario outline
-    #Given I want to write a step with <name>
-    #When I check for the <value> in step
-    #Then I verify the <status> in step
-#
-    #Examples: 
-      #| name  | value | status  |
-      #| name1 |     5 | success |
-      #| name2 |     7 | Fail    |
+    Then User should able to see "auth/login" in current page url
+
+  @LOG_TC_004
+  Scenario Outline: OrangeHRM Login in DDT
+    Given Chrome browser is launched
+    When User navigates to OrangeHRM Login page
+    And User enters username "<username>"
+    And User enters password "<password>"
+    And User clicks on login button
+    Then User should able to see "<expected_url_member>" in current page url
+
+    Examples: 
+      | username | password  | expected_url_member |
+      | Admin    | admin123  | dashboard/index     |
+      | Admins   | admin123  | auth/login          |
+      | Admin    | admin1234 | auth/login          |
+      | Admins   | admin1234 | auth/login          |
