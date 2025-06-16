@@ -19,35 +19,31 @@
 @OrangeHRMLoginFeature
 Feature: Orange HRM Login feature
 
+	Background: List of background steps for Login feature 
+		Given Chrome browser is launched
+    When User navigates to OrangeHRM Login page
+
   @LOG_TC_001
   Scenario: Validate navigation to OrangeHRM Login page
-    Given Chrome browser is launched
-    When User navigates to OrangeHRM Login page
     Then User should able to see auth/login in current page url
 
   @LOG_TC_002
   Scenario: Validate login to OrangeHRM site
-    Given Chrome browser is launched
-    When User navigates to OrangeHRM Login page
-    And User enters username
+    When User enters username
     And User enters password
     And User clicks on login button
     Then User should able to see dashboard/index in current page url
 
   @LOG_TC_003
   Scenario: OrangeHRM Login with parameters
-    Given Chrome browser is launched
-    When User navigates to OrangeHRM Login page
-    And User enters username "Admins"
+    When User enters username "Admins"
     And User enters password "admin123"
     And User clicks on login button
     Then User should able to see "auth/login" in current page url
 
   @LOG_TC_004
   Scenario Outline: OrangeHRM Login in DDT
-    Given Chrome browser is launched
-    When User navigates to OrangeHRM Login page
-    And User enters username "<username>"
+    When User enters username "<username>"
     And User enters password "<password>"
     And User clicks on login button
     Then User should able to see "<expected_url_member>" in current page url
