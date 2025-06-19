@@ -36,10 +36,10 @@ Feature: Orange HRM Login feature
 
   @LOG_TC_003
   Scenario: OrangeHRM Login with parameters
-    When User enters username "Admins"
+    When User enters username "Admin"
     And User enters password "admin123"
     And User clicks on login button
-    Then User should able to see "auth/login" in current page url
+    Then User should able to see "dashboard/index" in current page url
 
   @LOG_TC_004
   Scenario Outline: OrangeHRM Login in DDT
@@ -50,7 +50,7 @@ Feature: Orange HRM Login feature
 
     Examples: 
       | username | password  | expected_url_member |
-      | Admin    | admin123  | dashboard/index     |
+      | Admin    | admin123  | dashboard/index2    |
       | Admins   | admin123  | auth/login          |
       | Admin    | admin1234 | auth/login          |
       | Admins   | admin1234 | auth/login          |
